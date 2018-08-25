@@ -10,6 +10,8 @@ int main()
     float acumulador;
     acumulador=0;
     float promedio;
+    int continuar;
+    continuar=1;
 
     /*for(i=0; i<3; i++){
 
@@ -19,19 +21,21 @@ int main()
 
     }*/
 
-    while(i<3){
+    while(continuar){
 
         printf("Ingrese su edad: ");
         scanf("%d", &edad);
         printf("Usted tiene: %d",edad);
 
+        acumulador=acumulador+edad;
         i++;
 
-        acumulador=acumulador+edad;
+        printf("¿Desea continuar? (1/0)");
+        scanf("%d", &continuar);
 
     };
 
-    promedio=edad/i;
+    promedio=acumulador/i;
 
     printf("El promedio de edad es: %f",promedio);
 
