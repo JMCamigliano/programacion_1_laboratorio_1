@@ -21,8 +21,7 @@ int main()
 
     }*/
 
-    while(continuar){
-
+    do(
         printf("Ingrese su edad: ");
         scanf("%d", &edad);
         printf("Usted tiene: %d",edad);
@@ -32,8 +31,14 @@ int main()
 
         printf("¿Desea continuar? (1/0)");
         scanf("%d", &continuar);
+        ){
 
-    };
+            while(continuar){
+
+        };
+
+        }
+
 
     promedio=acumulador/i;
 
